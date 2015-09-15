@@ -148,5 +148,16 @@ public class ExampleTest {
         assertEquals(false, bib.verifyLogin("987-6543", "test"));
         assertEquals(true, bib.verifyLogin("987-6543", "testpassword2"));
     }
+
+    @Test
+    public void allMoviesShouldStartAsNotCheckedOut()
+    {
+        ArrayList<Movie> movies = bib.listMovies();
+        assertEquals(false, movies.get(0).isCheckedOut());
+
+        assertEquals(false, movies.get(1).isCheckedOut());
+        assertEquals(false, movies.get(2).isCheckedOut());
+
+    }
    
 }

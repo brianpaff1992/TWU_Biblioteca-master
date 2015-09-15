@@ -12,7 +12,39 @@ public class BibliotecaApp {
 
         bib = new Biblioteca();
 
+        loginScreen();
+
         listAndCheckOutStage();
+
+    }
+
+    public static void loginScreen()
+    {
+        System.out.println("Welcome to the Bangalore Public Library System, Please Input Your Library Number:");
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        String libaryNumber = null;
+        try {
+            libaryNumber = br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Please input Your password");
+
+        String password = null;
+        try {
+            password = br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if(!bib.verifyLogin(libaryNumber, password))
+        {
+            System.out.println("I'm sorry, the given information is incorrect, please try again");
+            loginScreen();
+        }
 
     }
 
