@@ -22,8 +22,8 @@ public class Biblioteca {
         }
 
         users = new ArrayList<LibraryPatron>();
-        users.add(new LibraryPatron("123-4567", "testpassword", "Brian Paff", "bpaff@bpaff.com"));
-        users.add(new LibraryPatron("987-6543", "testpassword2", "Momma Paff", "mpaff@bpaff.com"));
+        users.add(new LibraryPatron("123-4567", "testpassword", "Brian Paff", "bpaff@bpaff.com", "909-555-5655"));
+        users.add(new LibraryPatron("987-6543", "testpassword2", "Momma Paff", "mpaff@bpaff.com", "909-555-6656"));
     }
     public ArrayList<Movie> listMovies()
     {
@@ -65,5 +65,25 @@ public class Biblioteca {
     public ArrayList<LibraryPatron> getUsers()
     {
         return users;
+    }
+
+    public LibraryPatron getPatron(String libraryNumber)
+    {
+        for(LibraryPatron u: users)
+        {
+            if(u.getLibraryNumber().equals(libraryNumber))
+                return u;
+        }
+        return null;
+    }
+
+    public void printOutAccountInfo(LibraryPatron patron)
+    {
+        System.out.println("Account info:");
+        System.out.println("Library Number: " + patron.getLibraryNumber());
+        System.out.println("Name: " + patron.getName());
+        System.out.println("Email: " + patron.getEmail());
+        System.out.println("Phone Number: " + patron.getPhoneNumber());
+        System.out.println("");
     }
 }

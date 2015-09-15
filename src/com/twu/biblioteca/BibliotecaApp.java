@@ -9,6 +9,7 @@ public class BibliotecaApp {
 
     private static Biblioteca bib;
     private static String patron;
+    private static LibraryPatron lp;
 
     public static void main(String[] args) {
 
@@ -50,6 +51,8 @@ public class BibliotecaApp {
             loginScreen();
         }
 
+        lp = bib.getPatron(patron);
+
     }
 
     private static void listAndCheckOutStage()
@@ -60,7 +63,7 @@ public class BibliotecaApp {
 
             printOutMovies(movies);
 
-            System.out.println("Please input the title of the movie you would like to check out - type 'exit' when done checking out");
+            System.out.println("Please input the title of the movie you would like to check out - type 'exit' when done checking out - type 'account' to see your account info -");
 
             done = dealWithInput();
         }
@@ -84,8 +87,11 @@ public class BibliotecaApp {
 
             if (checkOutMovie.equals("exit")) {
                 return true;
+            } else if (checkOutMovie.equals("account")) {
+                bib.printOutAccountInfo(lp);
+            } else {
+                bib.checkOut(checkOutMovie, patron);
             }
-            bib.checkOut(checkOutMovie, patron);
         } catch (IOException e) {
             e.printStackTrace();
         }

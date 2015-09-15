@@ -214,11 +214,10 @@ public class ExampleTest {
     }
 
     @Test
-    @Ignore
     public void multiplePatronsPhoneNumberssShouldBeKeptTrackOf()
     {
-        assertEquals("bpaff@bpaff.com", bib.getUsers().get(0).getEmail());
-        assertEquals("mpaff@bpaff.com", bib.getUsers().get(1).getEmail());
+        assertEquals("909-555-5655", bib.getUsers().get(0).getPhoneNumber());
+        assertEquals("909-555-6656", bib.getUsers().get(1).getPhoneNumber());
     }
    
 }

@@ -9,14 +9,16 @@ public class LibraryPatron {
     private String password;
     private String name;
     private String email;
+    private String phoneNumber;
 
 
-    public LibraryPatron(String libraryNumber, String password, String name, String email)
+    public LibraryPatron(String libraryNumber, String password, String name, String email, String phoneNumber)
     {
         this.libraryNumber = libraryNumber;
         this.password = password;
         this.name = name;
         this.email = email;
+        this.phoneNumber = phoneNumber;
     }
 
     public boolean verifyPassword(String passwordGiven) {
@@ -47,6 +49,6 @@ public class LibraryPatron {
 
     public String getPhoneNumber()
     {
-        return "909-555-5655";
+        return phoneNumber;
     }
 }
