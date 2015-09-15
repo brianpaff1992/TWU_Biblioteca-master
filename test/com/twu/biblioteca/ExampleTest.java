@@ -45,4 +45,12 @@ public class ExampleTest {
     {
         assertEquals(movie.getDirector(), "Christopher Nolan");
     }
+
+    @Test
+    public void testIfMovieReturnsItsRating()
+    {
+        assertEquals(movie.getRating(), "10");
+    }
+
+    
 }

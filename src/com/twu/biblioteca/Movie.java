@@ -8,12 +8,14 @@ public class Movie {
     private String title;
     private int year;
     private String director;
+    private String rating;
 
     public Movie()
     {
         title = "Dark Knight";
         year = 2008;
         director = "Christopher Nolan";
+        rating = "10";
     }
 
     public String getTitle()
@@ -29,5 +31,10 @@ public class Movie {
     public String getDirector()
     {
         return director;
+    }
+
+    public String getRating()
+    {
+        return rating;
     }
 }
