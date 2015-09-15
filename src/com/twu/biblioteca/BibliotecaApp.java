@@ -22,26 +22,37 @@ public class BibliotecaApp {
         while(!done) {
             ArrayList<Movie> movies = bib.listMovies();
 
-            for (Movie m : movies) {
-                System.out.println("Movie: " + m.getTitle() + " year: " + m.getYear() + " directed by: " + m.getDirector() + " rating: " + m.getRating());
-            }
+            printOutMovies(movies);
 
             System.out.println("Please input the title of the movie you would like to check out - type 'exit' when done checking out");
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-            String checkOutMovie;
-            try {
-                checkOutMovie = br.readLine();
-
-                if (checkOutMovie.equals("exit")) {
-                    done = true;
-                }
-                bib.checkOut(checkOutMovie);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            done = dealWithInput();
         }
         System.out.println("Goodbye.");
+    }
+
+    private static void printOutMovies(ArrayList<Movie> movies)
+    {
+        for (Movie m : movies) {
+            System.out.println("Movie: " + m.getTitle() + " year: " + m.getYear() + " directed by: " + m.getDirector() + " rating: " + m.getRating());
+        }
+    }
+
+    private static boolean dealWithInput()
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        String checkOutMovie;
+        try {
+            checkOutMovie = br.readLine();
+
+            if (checkOutMovie.equals("exit")) {
+                return true;
+            }
+            bib.checkOut(checkOutMovie);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }
