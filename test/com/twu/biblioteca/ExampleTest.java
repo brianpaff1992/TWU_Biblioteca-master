@@ -19,13 +19,13 @@ public class ExampleTest {
 
         bib = new Biblioteca();
 
-        movie = bib.listMovies();
+        movie = bib.listMovies().get(0);
     }
 
     @Test
     public void testIfBiblioticaCanReturnMovie() {
 
-        assertTrue(bib.listMovies() instanceof Movie);
+        assertTrue(movie instanceof Movie);
     }
 
     @Test
@@ -52,5 +52,9 @@ public class ExampleTest {
         assertEquals(movie.getRating(), "10");
     }
 
-    
+    @Test
+    public void testIfMultipleMoviesReturnedWhenListed()
+    {
+        assertEquals(bib.listMovies().size(), 2);
+    }
 }

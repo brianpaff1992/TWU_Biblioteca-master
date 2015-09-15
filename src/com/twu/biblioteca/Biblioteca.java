@@ -1,12 +1,19 @@
 package com.twu.biblioteca;
 
+import java.util.ArrayList;
+
 /**
  * Created by Brian on 9/14/2015.
  */
 public class Biblioteca {
 
-    public Movie listMovies()
+    ArrayList<Movie> movies;
+
+    public ArrayList<Movie> listMovies()
     {
-        return new Movie();
+        movies = new ArrayList<Movie>();
+        movies.add(new Movie());
+
+        return movies;
     }
 }
