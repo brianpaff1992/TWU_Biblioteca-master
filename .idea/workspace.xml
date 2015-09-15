@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db91b00f-ea54-425d-8636-11e1c8b05f89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java" />
     </list>
     <ignored path="biblioteca.iws" />
@@ -33,12 +32,12 @@
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding>
                 <element signature="e#575#576#0" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
                 <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,8 +46,8 @@
       <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81050956">
-              <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.86464965">
+              <caret line="184" column="50" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="50" />
               <folding>
                 <element signature="e#1754#1755#0" expanded="true" />
                 <element signature="e#1810#1811#0" expanded="true" />
@@ -126,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Biblioteca.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java" />
       </list>
     </option>
   </component>
@@ -507,7 +506,7 @@
             <element signature="e#575#576#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,20 +621,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="e#575#576#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
             <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81050956">
-          <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.86464965">
+          <caret line="184" column="50" selection-start-line="184" selection-start-column="16" selection-end-line="184" selection-end-column="50" />
           <folding>
             <element signature="e#1754#1755#0" expanded="true" />
             <element signature="e#1810#1811#0" expanded="true" />
