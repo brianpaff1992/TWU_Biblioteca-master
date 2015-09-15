@@ -7,12 +7,14 @@ public class LibraryPatron {
 
     private String libraryNumber;
     private String password;
+    private String name;
 
 
-    public LibraryPatron(String libraryNumber, String password)
+    public LibraryPatron(String libraryNumber, String password, String name)
     {
         this.libraryNumber = libraryNumber;
         this.password = password;
+        this.name = name;
     }
 
     public boolean verifyPassword(String passwordGiven) {
@@ -33,6 +35,6 @@ public class LibraryPatron {
 
     public String getName()
     {
-        return "Brian Paff";
+        return name;
     }
 }
