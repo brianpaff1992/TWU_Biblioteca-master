@@ -18,6 +18,7 @@ public class ExampleTest {
     private Biblioteca bib;
     private Movie movie;
     private ArrayList<Movie> movies;
+    private LibraryPatron lp;
 
     @Before
     public void initialize(){
@@ -26,6 +27,8 @@ public class ExampleTest {
 
         movie = bib.listMovies().get(0);
         movies = bib.listMovies();
+
+        lp = new LibraryPatron("123-4567", "testPassword");
     }
 
     @Test
@@ -87,6 +90,7 @@ public class ExampleTest {
 
     }
 
+    //-----Check Out Movie Test Cases
     @Test
     public void testToMakeSureMoviesOnlyHaveValidRatings()
     {
@@ -111,5 +115,12 @@ public class ExampleTest {
     {
         bib.checkOut(movie.getTitle());
         assertEquals(2, bib.listMovies().size());
+    }
+
+    //---User Accounts - Login Test Cases
+    @Test
+    public void librarianPatronShouldHaveLibraryNumber()
+    {
+
     }
 }
