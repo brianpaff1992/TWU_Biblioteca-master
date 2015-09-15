@@ -170,5 +170,14 @@ public class ExampleTest {
         assertEquals(true, movies.get(1).isCheckedOut());
         assertEquals(false, movies.get(2).isCheckedOut());
     }
+
+    @Test
+    public void movieShouldKeepTrackOfWhoCheckedItOut()
+    {
+        ArrayList<Movie> movies = bib.listMovies();
+        movies.get(1).checkOut();
+
+        assertEquals(true, movies.get(1).getWhoCheckedOut());
+    }
    
 }

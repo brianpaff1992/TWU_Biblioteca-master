@@ -57,4 +57,9 @@ public class Movie {
     {
         return checkedOut;
     }
+
+    public String getWhoCheckedOut()
+    {
+        return "";
+    }
 }

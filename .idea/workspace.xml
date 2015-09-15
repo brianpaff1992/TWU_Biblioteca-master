@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db91b00f-ea54-425d-8636-11e1c8b05f89" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
     </list>
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +45,8 @@
       <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94585985">
-              <caret line="169" column="25" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.7563694">
+              <caret line="174" column="53" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="53" />
               <folding>
                 <element signature="e#1754#1755#0" expanded="true" />
                 <element signature="e#1810#1811#0" expanded="true" />
@@ -62,20 +63,14 @@
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
               <folding>
                 <element signature="e#746#747#0" expanded="true" />
                 <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
                 <element signature="e#1079#1080#0" expanded="true" />
                 <element signature="e#1112#1113#0" expanded="true" />
+                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,11 +123,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/InvalidMovieRatingException.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/LibraryPatron.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Biblioteca.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
       </list>
     </option>
   </component>
@@ -537,16 +532,10 @@
           <folding>
             <element signature="e#746#747#0" expanded="true" />
             <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
             <element signature="e#1079#1080#0" expanded="true" />
             <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -597,27 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding>
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Biblioteca.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -651,10 +619,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+          <folding>
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94585985">
-          <caret line="169" column="25" selection-start-line="169" selection-start-column="25" selection-end-line="169" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.7563694">
+          <caret line="174" column="53" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="53" />
           <folding>
             <element signature="e#1754#1755#0" expanded="true" />
             <element signature="e#1810#1811#0" expanded="true" />
