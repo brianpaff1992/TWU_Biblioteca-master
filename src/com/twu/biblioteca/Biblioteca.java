@@ -25,6 +25,13 @@ public class Biblioteca {
 
     public void checkOut(String title)
     {
-
+        for(Movie m: movies)
+        {
+            if(title.equals(m.getTitle()))
+            {
+                movies.remove(m);
+                break;
+            }
+        }
     }
 }
