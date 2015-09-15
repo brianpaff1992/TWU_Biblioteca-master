@@ -12,11 +12,14 @@ import static org.junit.Assert.assertTrue;
 public class ExampleTest {
 
     private Biblioteca bib;
+    private Movie movie;
 
     @Before
     public void initialize(){
 
         bib = new Biblioteca();
+
+        movie = bib.listMovies();
     }
 
     @Test
@@ -28,7 +31,12 @@ public class ExampleTest {
     @Test
     public void testIfMovieReturnsItsTitle()
     {
-        Movie movie = bib.listMovies();
         assertEquals(movie.getTitle(), "Dark Knight");
+    }
+
+    @Test
+    public void testIfMovieReturnsItsYear()
+    {
+        assertEquals(movie.getYear(), 2008);
     }
 }

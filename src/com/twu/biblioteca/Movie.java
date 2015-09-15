@@ -16,4 +16,9 @@ public class Movie {
     {
         return title;
     }
+
+    public int getYear()
+    {
+        return 1;
+    }
 }
