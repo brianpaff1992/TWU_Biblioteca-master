@@ -179,5 +179,12 @@ public class ExampleTest {
 
         assertEquals(bib.getUsers().get(0).getLibraryNumber(), movies.get(1).getWhoCheckedOut());
     }
+
+    //-------- User AccountsTests
+    @Test
+    public void libraryPatronShouldKeepTrackOfName()
+    {
+        assertEquals("Brian Paff", bib.getUsers().get(0).getName());
+    }
    
 }

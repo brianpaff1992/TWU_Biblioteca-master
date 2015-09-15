@@ -30,4 +30,9 @@ public class LibraryPatron {
     {
         return libraryNumber;
     }
+
+    public String getName()
+    {
+        return "";
+    }
 }
