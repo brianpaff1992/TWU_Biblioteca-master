@@ -37,6 +37,7 @@ public class ExampleTest {
     {
         assertEquals(movie.getTitle(), "Dark Knight");
         assertEquals(movies.get(1).getTitle(), "Mad Max: Fury Road");
+        assertEquals(movies.get(2).getTitle(), "Steve Jobs");
     }
 
     @Test
@@ -44,6 +45,7 @@ public class ExampleTest {
     {
         assertEquals(movie.getYear(), 2008);
         assertEquals(movies.get(1).getYear(), 2015);
+        assertEquals(movies.get(2).getYear(), 2015);
     }
 
     @Test
@@ -51,6 +53,7 @@ public class ExampleTest {
     {
         assertEquals(movie.getDirector(), "Christopher Nolan");
         assertEquals(movies.get(1).getDirector(), "George Miller");
+        assertEquals(movies.get(2).getDirector(), "Danny Boyle");
 
     }
 
@@ -59,6 +62,7 @@ public class ExampleTest {
     {
         assertEquals(movie.getRating(), "10");
         assertEquals(movies.get(1).getRating(), "9");
+        assertEquals(movies.get(2).getRating(), "unrated");
     }
 
     @Test
