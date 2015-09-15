@@ -186,5 +186,12 @@ public class ExampleTest {
     {
         assertEquals("Brian Paff", bib.getUsers().get(0).getName());
     }
+
+    @Test
+    public void multiplePatronsNamesShouldBeKeptTrackOf()
+    {
+        assertEquals("Brian Paff", bib.getUsers().get(0).getName());
+        assertEquals("Momma Paff", bib.getUsers().get(1).getName());
+    }
    
 }
