@@ -11,11 +11,12 @@ public class LibraryPatron {
     private String email;
 
 
-    public LibraryPatron(String libraryNumber, String password, String name)
+    public LibraryPatron(String libraryNumber, String password, String name, String email)
     {
         this.libraryNumber = libraryNumber;
         this.password = password;
         this.name = name;
+        this.email = email;
     }
 
     public boolean verifyPassword(String passwordGiven) {
@@ -41,6 +42,6 @@ public class LibraryPatron {
 
     public String getEmail()
     {
-        return "bpaff@bpaff.com";
+        return email;
     }
 }

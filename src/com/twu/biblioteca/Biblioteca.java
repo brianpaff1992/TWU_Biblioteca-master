@@ -22,8 +22,8 @@ public class Biblioteca {
         }
 
         users = new ArrayList<LibraryPatron>();
-        users.add(new LibraryPatron("123-4567", "testpassword", "Brian Paff"));
-        users.add(new LibraryPatron("987-6543", "testpassword2", "Momma Paff"));
+        users.add(new LibraryPatron("123-4567", "testpassword", "Brian Paff", "bpaff@bpaff.com"));
+        users.add(new LibraryPatron("987-6543", "testpassword2", "Momma Paff", "mpaff@bpaff.com"));
     }
     public ArrayList<Movie> listMovies()
     {
