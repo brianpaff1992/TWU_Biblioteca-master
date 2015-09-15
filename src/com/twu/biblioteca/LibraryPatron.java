@@ -8,6 +8,7 @@ public class LibraryPatron {
     private String libraryNumber;
     private String password;
     private String name;
+    private String email;
 
 
     public LibraryPatron(String libraryNumber, String password, String name)
@@ -36,5 +37,10 @@ public class LibraryPatron {
     public String getName()
     {
         return name;
+    }
+
+    public String getEmail()
+    {
+        return "bpaff@bpaff.com";
     }
 }

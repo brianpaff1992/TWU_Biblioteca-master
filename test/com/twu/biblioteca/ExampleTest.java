@@ -193,5 +193,18 @@ public class ExampleTest {
         assertEquals("Brian Paff", bib.getUsers().get(0).getName());
         assertEquals("Momma Paff", bib.getUsers().get(1).getName());
     }
+
+    @Test
+    public void libraryPatronShouldKeepTrackOfEmail()
+    {
+        assertEquals("bpaff@bpaff.com", bib.getUsers().get(0).getEmail());
+    }
+
+    @Test
+    public void multiplePatronsEmailsShouldBeKeptTrackOf()
+    {
+        assertEquals("bpaff@bpaff.com", bib.getUsers().get(0).getEmail());
+        assertEquals("mpaff@bpaff.com", bib.getUsers().get(1).getEmail());
+    }
    
 }
