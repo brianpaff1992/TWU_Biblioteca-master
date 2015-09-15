@@ -10,12 +10,12 @@ public class Movie {
     private String director;
     private String rating;
 
-    public Movie()
+    public Movie(String title, int year, String director, String rating)
     {
-        title = "Dark Knight";
-        year = 2008;
-        director = "Christopher Nolan";
-        rating = "10";
+        this.title = title;
+        this.year = year;
+        this.director = director;
+        this.rating = rating;
     }
 
     public String getTitle()
