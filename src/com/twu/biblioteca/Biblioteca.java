@@ -14,6 +14,7 @@ public class Biblioteca {
         movies = new ArrayList<Movie>();
         movies.add(new Movie("Dark Knight",2008, "Christopher Nolan", "10"));
         movies.add(new Movie("Mad Max: Fury Road",2015, "George Miller", "9"));
+        movies.add(new Movie("Steve Jobs", 2015, "Danny Boyle", "unrated"));
 
         return movies;
     }

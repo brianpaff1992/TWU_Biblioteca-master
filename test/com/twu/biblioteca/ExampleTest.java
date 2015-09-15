@@ -64,6 +64,12 @@ public class ExampleTest {
     @Test
     public void testIfMultipleMoviesReturnedWhenListed()
     {
-        assertEquals(bib.listMovies().size(), 2);
+        assertEquals(bib.listMovies().size(), 3);
+    }
+
+    @Test
+    public void testIfMovieCanBeUnrated()
+    {
+        assertEquals(movies.get(2).getRating(), "unrated");
     }
 }
