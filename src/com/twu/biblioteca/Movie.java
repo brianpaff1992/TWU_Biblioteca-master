@@ -6,10 +6,12 @@ package com.twu.biblioteca;
 public class Movie {
 
     private String title;
+    private int year;
 
     public Movie()
     {
         title = "Dark Knight";
+        year = 2008;
     }
 
     public String getTitle()
@@ -19,6 +21,11 @@ public class Movie {
 
     public int getYear()
     {
-        return 1;
+        return year;
+    }
+
+    public String getDirector()
+    {
+        return "";
     }
 }

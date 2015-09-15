@@ -39,4 +39,10 @@ public class ExampleTest {
     {
         assertEquals(movie.getYear(), 2008);
     }
+
+    @Test
+    public void testIfMovieReturnsItsDirector()
+    {
+        assertEquals(movie.getDirector(), "Christopher Nolan");
+    }
 }
