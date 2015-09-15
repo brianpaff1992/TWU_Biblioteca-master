@@ -23,6 +23,7 @@ public class Biblioteca {
 
         users = new ArrayList<LibraryPatron>();
         users.add(new LibraryPatron("123-4567", "testpassword"));
+        users.add(new LibraryPatron("987-6543", "testpassword2"));
     }
     public ArrayList<Movie> listMovies()
     {
