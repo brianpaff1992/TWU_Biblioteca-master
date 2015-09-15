@@ -110,6 +110,6 @@ public class ExampleTest {
     public void listOfMoviesShouldBeOneShorterOnceRemoveIsCalled()
     {
         bib.checkOut(movie.getTitle());
-        assertEquals(2, movies.size());
+        assertEquals(2, bib.listMovies().size());
     }
 }

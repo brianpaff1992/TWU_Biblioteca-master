@@ -9,6 +9,7 @@ public class Movie {
     private int year;
     private String director;
     private String rating;
+    private boolean checkedOut;
 
     public Movie(String title, int year, String director, String rating) throws InvalidMovieRatingException {
         if(rating.equals("unrated") || Integer.parseInt(rating) >0 && Integer.parseInt(rating) < 11)
@@ -19,11 +20,17 @@ public class Movie {
             this.year = year;
             this.director = director;
             this.rating = rating;
+            checkedOut = false;
         }
 
         else {
             throw new InvalidMovieRatingException();
         }
+    }
+
+    public void checkOut()
+    {
+        checkedOut = true;
     }
 
     public String getTitle()
@@ -44,5 +51,10 @@ public class Movie {
     public String getRating()
     {
         return rating;
+    }
+
+    public boolean isCheckedOut()
+    {
+        return checkedOut;
     }
 }
