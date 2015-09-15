@@ -26,7 +26,7 @@ public class BibliotecaApp {
                 System.out.println("Movie: " + m.getTitle() + " year: " + m.getYear() + " directed by: " + m.getDirector() + " rating: " + m.getRating());
             }
 
-            System.out.println("Please input the title of the movie you would like to check out");
+            System.out.println("Please input the title of the movie you would like to check out - type 'exit' when done checking out");
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
