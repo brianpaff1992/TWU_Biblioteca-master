@@ -38,13 +38,13 @@ public class Biblioteca {
         return returnMovies;
     }
 
-    public void checkOut(String title)
+    public void checkOut(String title,String libaryPatron)
     {
         for(Movie m: movies)
         {
             if(title.equals(m.getTitle()))
             {
-                m.checkOut();
+                m.checkOut(libaryPatron);
             }
         }
     }

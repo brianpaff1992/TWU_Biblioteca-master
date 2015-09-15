@@ -110,7 +110,7 @@ public class ExampleTest {
     @Test
     public void listOfMoviesShouldBeOneShorterOnceRemoveIsCalled()
     {
-        bib.checkOut(movie.getTitle());
+        bib.checkOut(movie.getTitle(), bib.getUsers().get(0).getLibraryNumber());
         assertEquals(2, bib.listMovies().size());
     }
 
@@ -164,7 +164,7 @@ public class ExampleTest {
     public void movieShouldReturnTrueIfSomeoneHasCalledCheckOutOnItPreviously()
     {
         ArrayList<Movie> movies = bib.listMovies();
-        movies.get(1).checkOut();
+        movies.get(1).checkOut(bib.getUsers().get(0).getLibraryNumber());
         assertEquals(false, movies.get(0).isCheckedOut());
 
         assertEquals(true, movies.get(1).isCheckedOut());
@@ -175,9 +175,9 @@ public class ExampleTest {
     public void movieShouldKeepTrackOfWhoCheckedItOut()
     {
         ArrayList<Movie> movies = bib.listMovies();
-        movies.get(1).checkOut();
+        movies.get(1).checkOut(bib.getUsers().get(0).getLibraryNumber());
 
-        assertEquals(true, movies.get(1).getWhoCheckedOut());
+        assertEquals(bib.getUsers().get(0).getLibraryNumber(), movies.get(1).getWhoCheckedOut());
     }
    
 }

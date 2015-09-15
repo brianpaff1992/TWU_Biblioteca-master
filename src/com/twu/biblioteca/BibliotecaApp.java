@@ -8,6 +8,8 @@ import java.util.ArrayList;
 public class BibliotecaApp {
 
     private static Biblioteca bib;
+    private static String patron;
+
     public static void main(String[] args) {
 
         bib = new Biblioteca();
@@ -30,6 +32,8 @@ public class BibliotecaApp {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        patron = libaryNumber;
 
         System.out.println("Please input Your password");
 
@@ -81,7 +85,7 @@ public class BibliotecaApp {
             if (checkOutMovie.equals("exit")) {
                 return true;
             }
-            bib.checkOut(checkOutMovie);
+            bib.checkOut(checkOutMovie, patron);
         } catch (IOException e) {
             e.printStackTrace();
         }
