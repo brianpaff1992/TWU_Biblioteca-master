@@ -51,6 +51,14 @@ public class Biblioteca {
 
     public boolean verifyLogin(String libraryNumber, String givenPassword)
     {
+       for(LibraryPatron u: users)
+       {
+           if(libraryNumber.equals(u.getLibraryNumber()))
+           {
+                return u.verifyPassword(givenPassword);
+           }
+       }
+
         return false;
     }
 
