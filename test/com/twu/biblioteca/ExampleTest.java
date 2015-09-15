@@ -159,5 +159,16 @@ public class ExampleTest {
         assertEquals(false, movies.get(2).isCheckedOut());
 
     }
+
+    @Test
+    public void movieShouldReturnTrueIfSomeoneHasCalledCheckOutOnItPreviously()
+    {
+        ArrayList<Movie> movies = bib.listMovies();
+        movies.get(1).checkOut();
+        assertEquals(false, movies.get(0).isCheckedOut());
+
+        assertEquals(true, movies.get(1).isCheckedOut());
+        assertEquals(false, movies.get(2).isCheckedOut());
+    }
    
 }
