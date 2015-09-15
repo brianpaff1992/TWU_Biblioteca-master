@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Biblioteca {
 
     ArrayList<Movie> movies;
+    ArrayList<LibraryPatron> users;
 
     public Biblioteca()
     {
@@ -19,6 +20,9 @@ public class Biblioteca {
         } catch (InvalidMovieRatingException e) {
             //Notify user of invalid rating... since this is a end-user system, and not being used by the librarians, this excpetion should not be thrown, so I won't handle it yet.
         }
+
+        users = new ArrayList<LibraryPatron>();
+        users.add(new LibraryPatron("123-4567", "testpassword"));
     }
     public ArrayList<Movie> listMovies()
     {
@@ -42,5 +46,10 @@ public class Biblioteca {
                 m.checkOut();
             }
         }
+    }
+
+    public ArrayList<LibraryPatron> getUsers()
+    {
+        return users;
     }
 }
