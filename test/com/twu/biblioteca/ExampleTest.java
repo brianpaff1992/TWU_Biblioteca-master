@@ -120,12 +120,24 @@ public class ExampleTest {
     {
         assertEquals(bib.getUsers().get(0).getLibraryNumber(), "123-4567");
     }
-    
+
     @Test
     public void multipleUsersShouldHaveLibraryNumber()
     {
         assertEquals(bib.getUsers().get(0).getLibraryNumber(), "123-4567");
         assertEquals(bib.getUsers().get(1).getLibraryNumber(), "987-6543");
+    }
+
+    @Test
+    public void verifyShouldReturnTrueInTheCaseOfACorrectPassword()
+    {
+        assertEquals(true, bib.getUsers().get(0).verifyPassword("testpassword"));
+    }
+
+    @Test
+    public void verifyShouldReturnFalseInTheCaseOfAnIncorrectPassword()
+    {
+        assertEquals(false, bib.getUsers().get(0).verifyPassword("testpassword1"));
     }
    
 }
