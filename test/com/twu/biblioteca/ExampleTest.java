@@ -139,5 +139,14 @@ public class ExampleTest {
     {
         assertEquals(false, bib.getUsers().get(0).verifyPassword("testpassword1"));
     }
+
+    @Test
+    public void checkPasswordShouldOnlyReturnTrueIfThePasswordMatchesTheLibraryNumber()
+    {
+        assertEquals(false, bib.verifyLogin("123-4567", "test"));
+        assertEquals(true, bib.verifyLogin("123-4567", "testpassword"));
+        assertEquals(false, bib.verifyLogin("987-6543", "test"));
+        assertEquals(true, bib.verifyLogin("987-6543", "testpassword2"));
+    }
    
 }

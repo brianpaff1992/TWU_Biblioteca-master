@@ -49,6 +49,11 @@ public class Biblioteca {
         }
     }
 
+    public boolean verifyLogin(String libraryNumber, String givenPassword)
+    {
+        return false;
+    }
+
     public ArrayList<LibraryPatron> getUsers()
     {
         return users;
