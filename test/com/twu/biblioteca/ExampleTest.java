@@ -206,5 +206,19 @@ public class ExampleTest {
         assertEquals("bpaff@bpaff.com", bib.getUsers().get(0).getEmail());
         assertEquals("mpaff@bpaff.com", bib.getUsers().get(1).getEmail());
     }
+
+    @Test
+    public void libraryPatronShouldKeepTrackOfPhoneNumber()
+    {
+        assertEquals("909-555-5655", bib.getUsers().get(0).getPhoneNumber());
+    }
+
+    @Test
+    @Ignore
+    public void multiplePatronsPhoneNumberssShouldBeKeptTrackOf()
+    {
+        assertEquals("bpaff@bpaff.com", bib.getUsers().get(0).getEmail());
+        assertEquals("mpaff@bpaff.com", bib.getUsers().get(1).getEmail());
+    }
    
 }
