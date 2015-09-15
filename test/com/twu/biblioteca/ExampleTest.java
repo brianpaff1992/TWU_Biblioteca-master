@@ -2,6 +2,7 @@ package com.twu.biblioteca;
 
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.PrintStream;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class ExampleTest {
 
@@ -75,5 +77,39 @@ public class ExampleTest {
     public void testIfMovieCanBeUnrated()
     {
         assertEquals(movies.get(2).getRating(), "unrated");
+    }
+
+    @Test
+    @Ignore
+    public void testToMakeSureAllMoviesGetPrintedToTheConsole()
+    {
+        //I can't get mokito to work on my computer, but here is where it would go.
+
+    }
+
+    @Test
+    public void testToMakeSureMoviesOnlyHaveValidRatings()
+    {
+        try {
+            Movie movie1 = new Movie("Dark Knight", 2008, "Christopher Nolan", "11");
+
+            fail( "My method didn't throw when I expected it to" );
+        }
+        catch (InvalidMovieRatingException expectedException) {
+        }
+        try {
+        Movie movie2 = new Movie("Dark Knight", 2008, "Christopher Nolan", "0");
+
+            fail( "My method didn't throw when I expected it to" );
+    }
+   catch (InvalidMovieRatingException expectedException) {
+        }
+    }
+
+    @Test
+    public void listOfMoviesShouldBeOneShorterOnceRemoveIsCalled()
+    {
+        bib.checkOut(movie.getTitle());
+        assertEquals(2, movies.size());
     }
 }

@@ -10,12 +10,20 @@ public class Movie {
     private String director;
     private String rating;
 
-    public Movie(String title, int year, String director, String rating)
-    {
-        this.title = title;
-        this.year = year;
-        this.director = director;
-        this.rating = rating;
+    public Movie(String title, int year, String director, String rating) throws InvalidMovieRatingException {
+        if(rating.equals("unrated") || Integer.parseInt(rating) >0 && Integer.parseInt(rating) < 11)
+        {
+
+
+            this.title = title;
+            this.year = year;
+            this.director = director;
+            this.rating = rating;
+        }
+
+        else {
+            throw new InvalidMovieRatingException();
+        }
     }
 
     public String getTitle()
