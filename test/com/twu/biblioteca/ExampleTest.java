@@ -18,9 +18,17 @@ public class ExampleTest {
 
         bib = new Biblioteca();
     }
+
     @Test
     public void testIfBiblioticaCanReturnMovie() {
 
         assertTrue(bib.listMovies() instanceof Movie);
+    }
+
+    @Test
+    public void testIfMovieReturnsItsTitle()
+    {
+        Movie movie = bib.listMovies();
+        assertEquals(movie.getTitle(), "Dark Knight");
     }
 }
