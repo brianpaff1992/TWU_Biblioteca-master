@@ -63,7 +63,6 @@ public class BibliotecaApp {
 
             printOutMovies(movies);
 
-            System.out.println("Please input the title of the movie you would like to check out - type 'exit' when done checking out - type 'account' to see your account info -");
 
             done = dealWithInput();
         }
@@ -72,6 +71,9 @@ public class BibliotecaApp {
 
     private static void printOutMovies(ArrayList<Movie> movies)
     {
+
+        System.out.println("Please input the title of the movie you would like to check out - type 'exit' when done checking out - type 'account' to see your account info -");
+
         for (Movie m : movies) {
             System.out.println("Movie: " + m.getTitle() + " year: " + m.getYear() + " directed by: " + m.getDirector() + " rating: " + m.getRating());
         }
